@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".fragments.TripsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:id="@+id/fab_contain_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/contain_fram"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Here is your trips "
+                android:textSize="24sp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorBlack"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_add_white_24dp"
+                app:borderWidth="0dp"
+                app:fabSize="normal"
+                app:rippleColor="@color/colorDarkPurple"/>
+
+            <com.github.fabtransitionactivity.SheetLayout
+                android:id="@+id/bottom_sheet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                app:ft_container_gravity="center"
+                app:ft_color="@color/colorPrimary"
+                android:elevation="3dp"
+                />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/location_track_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track Location"/>
+
+</RelativeLayout>

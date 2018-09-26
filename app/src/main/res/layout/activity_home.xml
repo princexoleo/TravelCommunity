@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.HomeActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/drawerLayout"
+    android:fitsSystemWindows="true">
+
+
+
+
+
+<FrameLayout
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+      <!--    <LinearLayout
+              android:id="@+id/button_container"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+              <Button
+                  android:id="@+id/trips_fragment_button"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Trips"
+                  android:layout_weight="1"/>
+
+              <Button
+                  android:id="@+id/stat_fragment_button"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Statistics"
+                  android:layout_weight="1"/>
+          </LinearLayout> off-->
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/bottom_navigationBar_id"
+                >
+
+            </FrameLayout>
+            <!--Center Fragments Container-->
+            <!--Bottom Navigation  -->
+            <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+                android:id="@+id/bottom_navigationBar_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:menu="@menu/bottom_navigation_menu"
+                android:background="@drawable/white_grey_border_top"
+                android:layout_alignParentBottom="true">
+
+            </com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx>
+
+        </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</FrameLayout>
+
+ <android.support.design.widget.NavigationView
+     android:id="@+id/nav_view"
+     android:layout_width="310dp"
+     android:layout_height="match_parent"
+     android:layout_gravity="start"
+     android:fitsSystemWindows="true"
+     app:headerLayout="@layout/nav_header"
+     app:menu="@menu/drawer_view"
+     >
+
+ </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

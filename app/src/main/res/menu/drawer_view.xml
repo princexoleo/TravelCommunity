@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_trending"
+            android:icon="@drawable/ic_trending"
+            android:title="Trending" />
+
+        <item
+            android:id="@+id/nav_store"
+            android:icon="@drawable/ic_store_black_24dp"
+            android:title="Store" />
+        <item
+            android:id="@+id/nav_tips"
+            android:icon="@drawable/ic_touch_app_black_24dp"
+            android:title="Tips" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_live_help_black_24dp"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_album"
+            android:title="About" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_do_not_disturb_alt_black_24dp"
+            android:title="Log out" />
+    </group>
+</menu>

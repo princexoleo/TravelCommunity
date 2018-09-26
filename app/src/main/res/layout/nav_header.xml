@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/colorPrimaryDark"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/user_cover_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorDarkPurple"/>
+
+    </LinearLayout>
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/user_pro_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_pro"
+        app:civ_border_color="#EEEEEE"
+        app:civ_border_width="2dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#8BC34A"
+        app:civ_shadow_radius="10"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/user_info_relative_layout"
+        android:layout_below="@id/user_pro_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_name_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mazharul Islam Leon"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/user_location_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dhaka,Bangladesh"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/user_name_id"/>
+
+        <LinearLayout
+            android:id="@+id/user_name_loca_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="2dp">
+
+            <TextView
+                android:id="@+id/follower_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4K"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/follower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/follower_tv"
+                android:text="followers"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

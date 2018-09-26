@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:layout_marginTop="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/person_profile_imageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_pro"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                />
+            <TextView
+                android:id="@+id/person_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mazharul Islam leon"
+                android:textSize="12sp"
+                android:textColor="@color/colorBlack"
+                android:layout_toEndOf="@id/person_profile_imageView"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="4dp"/>
+            <TextView
+                android:id="@+id/person_onlinestatus_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Active now"
+                android:textColor="@color/Gray"
+                android:layout_toEndOf="@id/person_profile_imageView"
+                android:layout_below="@id/person_name_tv"
+                android:layout_marginLeft="4dp"/>
+
+            <TextView
+
+                android:id="@+id/person_post_desc_et"
+                android:layout_below="@id/person_profile_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="Hello we are now go to Coxsbazar"
+                android:textSize="14sp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="4dp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/map_image_linear_layout"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/person_post_desc_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_below="@id/person_post_desc_et"
+                    android:id="@+id/person_map_imageView"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/ic_pro"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    tools:ignore="NotSibling"
+                    android:layout_marginTop="5dp"/>
+                <ImageView
+                    android:id="@+id/person_online_view"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/online_view"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginTop="4dp"
+                    android:visibility="visible"
+                    />
+                <ImageView
+                    android:id="@+id/person_offline_view"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/offline_view"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginTop="4dp"
+                    android:visibility="invisible"
+                    />
+
+                <RelativeLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    style="@style/ThemeOverlay.AppCompat.Light"
+                    android:background="@color/whiteGray"
+                    android:alpha="0.3"
+                    >
+
+                    <TextView
+                        android:id="@+id/person_tour_walking_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Walking: 20 km"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:layout_marginStart="4dp"
+                        />
+                    <TextView
+                        android:id="@+id/person_tour_distance_cover_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/person_tour_walking_tv"
+                        android:text="Distance Cover: 55 km"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:layout_marginStart="4dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/person_tour_distance_remining_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="Distance Remining: 55 km"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:layout_marginStart="4dp"
+                        />
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/cardview_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        app:cardElevation="7dp"
+        app:cardCornerRadius="4dp"
+        app:cardPreventCornerOverlap="true"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/person_like_heart_red"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_heart_red"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/person_like_heart_white"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_heart_white"
+                android:visibility="invisible"/>
+
+            <ImageButton
+                android:id="@+id/person_share_imgBtn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_share"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
